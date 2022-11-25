@@ -1,0 +1,111 @@
+*{
+    margin: 20px 20px;
+    justify-content: center;
+    /* background-color: grey; */
+    
+}
+
+:root {
+    /* background-color: lightgrey; */
+    background-color: var(--radio-color);
+    --babypink: rgb(225, 132, 234);
+    --green: rgb(47, 255, 0);
+    -blue: rgb(55, 0, 255);
+    --dark: rgb(77, 72, 72);
+    --light: rgb(249, 254, 162);
+  }
+  body {
+    background-color: var(--radio-color);
+  }
+
+  
+input[type="radio"] {
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid;
+    border-radius: 50%;
+    /* offset: 1rem;
+    outline-offset: 3px; */
+  }
+  input[type="radio"]:checked {
+    background-color: var(--radio-color);
+  }
+  
+  #babypink {
+    --radio-color: rgb(225, 132, 234);
+  }
+  #light {
+    --radio-color: rgb(249, 254, 162);
+  }
+  #blue {
+    --radio-color: rgb(55, 0, 255);
+  }
+  #green {
+    --radio-color: rgb(105, 251, 47);
+  }
+  #dark {
+    --radio-color: rgb(47, 38, 61);
+  }
+  
+  :root:has(#dark:checked) {
+    background-color: var(--dark);
+  }
+  :root:has(#babypink:checked) {
+    background-color: var(--babypink);
+    /* background-color: pink; */
+  }
+  :root:has(#light:checked) {
+    background-color: var(--light);
+  }
+  :root:has(#blue:checked) {
+    background-color: var(--blue);
+    /* background-color: rgb(26, 149, 250); */
+  }
+  :root:has(#orange:checked) {
+    background-color: var(--orange);
+    /* background-color: rgb(255, 98, 0); */
+  }
+  
+
+  .color-changer {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    width: fit-content;
+    margin-inline: auto;
+    /* border: 0; */
+    background-color: white;
+  }
+  
+  .form-control {
+    margin: 50px;
+    border: 0;
+    background-color: white;
+  }
+  
+
+.main-container{
+    display: flex;
+    align-content: center;
+    
+}
+.main-content{
+    border: 3px solid grey;
+    height: 150px;
+    padding: 10px;
+    width:40%;
+}
+
+.theme
+{
+    margin-top: 50px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#demo
+{
+    margin-top: 150px;
+    align-content: center;
+    width:80%;
+}
